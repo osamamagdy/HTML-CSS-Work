@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML FORMS</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <!--Start Creating input form for your page-->
+    <form>
+
+        <!--Self closing tag/ id must be unique for all elements in html-->
+        <!--The name attribute is used in the back end-->
+        <!--The required attribute means you can't submit the form without filling this input first-->
+        <input type="text" id="username" name="username" required>
+        
+        <!--This is just to link the label for the input field// The appearance is adjusted later in CSS-->
+        <!--Note that we use the id from input type to put it in the for attribute-->
+        <label for="username">enter your username</label>
+
+        <br><br>
+
+        <!--Email input // This have special treatment from the browser-->
+        <label for="email">Enter your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <!--This type has a special treatment by the browser as a password
+            like being hidden from the screen and replaced with ********-->
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" required> 
+
+        <br><br>
+
+        <!--Name attribute has another use for grouping input values-->
+        <!--Especially the radio box-->
+
+        <p>Select your age:</p>
+        <!--value is passed to the back end and doesn't appear on the browser-->
+        <!--The label is what appears-->
+        <!--required here means that you're required to choose one of them-->
+        <input type="radio" name="age" value="10-20" id="option-1" required>
+        <label for="option-1">10-20</label>
+
+        <input type="radio" name="age" value="20-30" id="option-2">
+        <label for="option-2">20-30</label>
+
+        <input type="radio" name="age" value="30-40" id="option-3">
+        <label for="option-3">30-40</label>
+        
+        <br><br>
+        <!--The name attribute is what makes them belong to the same box-->
+
+        <!--------------------------------------------------------------------------->
+
+        <!--Select is a non-self closing tag ///
+            you put inside it thea option tag with values passed to back end when being selected-->
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="q1">What color is your favourite</option>
+            <option value="q2">What clothe is your favourite</option>
+            <option value="q3">What hobby is your favourite</option>
+        </select>
+
+        <!--The answer for the drop box above-->
+        <label for="text">answer</label>
+        <input type="text" name="answer" id="answer">
+
+
+        <br><br>
+
+        <!--Taking a whole paragraph as input-->
+        <label for="bio">Your bio:</label>
+        <br>
+        <!--name is for back end/ id for the html and css / col and rows for the number of chars the user can input-->
+        <!--placeholder is the shadowed text when the area is empty-->
+        <!--Note : you can add placeholder to any type of input-->
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="write aboout yourself in here......"></textarea>
+
+
+        <br><br>
+        <!--Value here is the text written on the button not passed to the backend-->
+        <input type="submit" value="submit the form">
+    </form>
+
+</body>
+
+
+</html>

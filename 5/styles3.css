@@ -1,0 +1,28 @@
+    /*
+    This is to illustrate the concept of inheritance
+
+    */
+
+/*This is style for the whole sheet*/
+div{
+    color :lightcoral;
+    border: 1px solid gray;
+    margin: 40px;
+    font-weight: bold;
+
+}
+
+/*This is spicial style for the p inside this div tag*/
+/*This has a higher priority and weight more than the ordinary p tag */
+/*So it will be executed no matter what its order in the file*/
+div p{
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+}
+
+
+
+p{
+    color: orange;
+}

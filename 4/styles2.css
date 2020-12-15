@@ -1,0 +1,25 @@
+
+/*Remember that the browser have a default styles that you can override */
+
+h2{
+    color: crimson;
+}
+
+
+span{
+    /*Convert the span tag from inline to block element*/
+    /*You can notice the difference between padding,margin for block and for inline*/
+    /*use inspect on google chrome to see wht we mean*/
+
+    /*display: block;*/
+    /*if you wanted them to have the padding and margin of the block but still they don't take the whole line*/
+    /*display:inline-block;*/
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/*
+for block elements, margin and padding are all around the block
+for inline elements, padding is all around the element and the margin is jus on righ and left of it
+*/

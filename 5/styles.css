@@ -1,0 +1,30 @@
+
+/*The following line is to customize all <p></p> 
+    that has the class name "first"
+    if we needed to make it globally to all tags of the same class
+    write only .first*/
+
+p.first{
+    color: crimson;
+ 
+}
+
+
+p.feedback{
+    color: green;
+}
+/*This is to style a p tag that have both classes first & feedback(the order doesn't matter in .)
+    But if you commented this, the browser will execute the 1st defined style and then override it by the second (this is because they have been called at the same class)*/
+p.feedback.first{
+    border: 2px dashed brown;
+}
+
+/*Styles for the ID named content*/
+#content{
+    color: darkcyan;
+    background-color: #000000;
+    padding: 20px;
+}
+
+
+

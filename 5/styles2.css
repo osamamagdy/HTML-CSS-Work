@@ -1,0 +1,64 @@
+/*If i wanted to use the decendants concept*/
+
+/*Here i target all p tags inside the div tag
+    they are seperated with a space*/
+div p{
+    color:#5395bb;
+}
+
+/*here i target all the a tags inside p tags inside div tags*/
+/*Remember they are separated with spaces*/
+div p a{
+
+    color: mediumorchid;
+
+}
+
+
+/*Here you target all first classes inside the div tag*/
+div .first{
+    color: palegoldenrod ;
+}
+
+/*Here you target all first class p tags that are inside div tag*/
+div p.first{
+    color:palegreen
+
+}
+
+
+/***Remember to use decendants(things inside the tag)--> Spaces
+     To choose a certain class(a tag with specified class name)---> dot (.)***/
+
+
+
+
+/*To style each a tag with href attribute*/
+
+     a[href]{
+         color:black;
+         background-color: palegreen;
+     }
+
+/*To style each a tag with href attribute equal https://www.google.com*/
+
+a[href="https://www.google.com"]
+{
+    background-color: palevioletred;
+}
+
+
+/*To style each a tag with href attribute that has the word google inside it */
+a[href*="google"]
+{
+    background-color: black;
+    color: white;
+}
+
+
+/*To style each a tag with href attribute that ends with the word .com */
+a[href$=".com"]
+{
+    background-color: black;
+    color: white;
+}

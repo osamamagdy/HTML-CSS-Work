@@ -1,0 +1,60 @@
+      /*the name of the tag you want to style*/
+    h1{
+        color:aqua;
+        background-color: blue;
+        font-size: 200px;
+        text-decoration :none;
+        font-family:arial;
+        text-align: center;
+    }
+
+    p{
+        color:darkred;
+        background-color: burlywood;
+        text-align: left;
+
+        letter-spacing: 3px;
+
+        column-count: 3;
+        column-gap: 50px;
+
+    }
+
+
+    ul{
+        color: oldlace;
+        background-color: rgb(18, 44, 192);
+        border-width: 20px;
+        border-style: solid;
+    }
+
+    ol{
+
+        color :rgba(109, 5, 95, 0.521);
+        background-color: tomato;
+        border-width: 20px;
+        border-style: solid;
+       /*this by default the color of the element */
+        border-color: rgb(116, 100, 89);
+
+        /*you can use this instead for the width,style,border-color:
+         border: 20px solid rgb(116, 100, 89)  */
+
+
+         /* to make borders in the left and buttom only
+         border-bottom: 4px dashed crimson;
+         border-left: 8px dotted crimson ;
+         */
+
+    }
+
+
+    li{
+        list-style-type: square;
+        text-shadow: 0.01px 0.5px #d62173;
+        color :saddlebrown;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    
